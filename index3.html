@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Trailer Table</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        img {
+            width: 150px;
+            height: 200px;
+        }
+        video {
+            width: 320px;
+            height: 180px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Movie Trailers</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Image</th>
+            <th>Movie Trailer</th>
+        </tr>
+        <tr>
+            <td>Rajinikanth</td>
+            <td><img src="rajini.jpg" alt="Rajinikanth"></td>
+            <td>
+                <video controls>   
+                    <source src="https://www.youtube.com/watch?v=jxCRlebiebw" type="video/mp4" autoplay muted controls> 
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+        </tr>
+        <tr>
+            <td>Vijay</td>
+            <td><img src="vijay.jpeg" alt="Vijay"></td>
+            <td>
+                <video controls>
+                    <source src="Remo.mp4" type="video/mp4" autoplay muted controls>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

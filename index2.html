@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        form {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"], input[type="email"], input[type="password"], input[type="tel"], select {
+            width: 300px;
+            padding: 5px;
+            margin-top: 5px;
+        }
+        input[type="submit"], input[type="reset"] {
+            margin-top: 10px;
+        }
+        .gender{
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .language{
+            margin-top: 5px;
+        }
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .checkbox-group input {
+            margin-right: 10px; /* Space between checkbox and label */
+        }
+    </style>
+</head>
+<body>
+
+    <form method="get">
+        <h1>Form</h1>
+
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+
+        <label for="email">Mail:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email">
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password">
+
+        <label>Language:</label>
+            <input type="checkbox" id="telugu" name="language" value="telugu">
+            <label for="telugu">Telugu</label><br>
+            <input type="checkbox" id="hindi" name="language" value="hindi">
+            <label for="hindi">Hindi</label><br>
+            <input type="checkbox" id="english" name="language" value="english"> 
+            <label for="english">English</label><br><br>
+            
+
+
+        <label>Gender:</label>
+        <div class="gender">
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+             </div>
+        <div class="gender">
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        </div>
+
+
+        <label for="color">Color:</label>
+        <input type="color" id="color" name="color">
+
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date">
+
+
+        <label for="rating">Rating:</label>
+        <input type="range" id="rating" name="rating" min="0" max="10">
+
+
+        <label for="upload">Upload image:</label>
+        <input type="file" id="upload" name="upload">
+
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+
+</body>
+</html>
